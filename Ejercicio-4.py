@@ -13,3 +13,17 @@
             Mayor número ingresado: 5
             Menor número ingresado: 1
 """
+numero = int(input('ingrese un número: '))
+mayor = numero
+menor = numero
+
+while(numero != 0):
+    if numero > mayor:
+        mayor = numero
+    
+    if numero < menor:
+        menor = numero
+    numero = int(input('Ingrese otro número: '))
+
+print(f'Mayor número ingresado {mayor}')
+print(f'Menor número ingresado {menor}')
